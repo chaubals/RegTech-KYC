@@ -1,0 +1,11 @@
+# OCR and PDF processing dependencies
+easyocr>=1.7.0
+pdf2image>=1.16.3
+Pillow>=10.0.0
+
+# Note: pdf2image requires poppler-utils to be installed on your system
+# Windows: Download from https://github.com/oschwartz10612/poppler-windows/releases/
+# macOS: brew install poppler
+# Linux: sudo apt-get install poppler-utils
+
+
