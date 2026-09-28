@@ -49,3 +49,16 @@ def build_kyc_graph():
   graph.add_edge("human_review", END)
 
   return graph.compile()
+
+def run_kyc_graph(kyc_id, documents):
+  graph = build_kyc_graph()
+
+  initial_state = {
+    "kyc_id": kyc_id,
+    "documents": documents,
+    "audit_log": []
+  }
+
+  final_state = graph.invoke(initial_state)
+
+  return final_state

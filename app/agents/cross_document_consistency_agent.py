@@ -2,6 +2,9 @@ from requests.utils import address_in_network
 from app.graph.state import KYCState
 from langchain_openai import ChatOpenAI
 from datetime import datetime, timezone
+from dotenv import load_dotenv
+
+load_dotenv()
 
 llm = ChatOpenAI(
   model='gpt-4o',
