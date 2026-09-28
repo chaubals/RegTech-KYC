@@ -32,7 +32,7 @@ def decision_agent(state: KYCState) -> KYCState:
 
   # Rule 4: Expired documents => ESCALATE
   elif consistency.get("expired_documents"):
-    decision = "ESCALATE",
+    decision = "ESCALATE"
     decision_factors.append("Expired identity document detected")
 
   # Rule 5: Clean => APPROVE
